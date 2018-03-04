@@ -1,0 +1,9 @@
+{
+  "name": "es-code",
+  "version": "1.0.0",
+  "description": "Elasticsearch IDE",
+  "main": "index.js",
+  "repository": "git@github.com:zhaoyi0113/es-code.git",
+  "author": "Zhao Yi",
+  "license": "MIT"
+}
