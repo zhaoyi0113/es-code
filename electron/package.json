@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"engines": {
     "node": ">= 8.9.1"
-  },
+	},
+	"author": "Zhao Yi",
   "scripts": {
     "start": "electron .",
     "clean": "rimraf lib",
