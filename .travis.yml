@@ -4,6 +4,7 @@ os:
 language: node_js
 
 script:
+  - uname -a
   - cd frontend
   - yarn install --no-progress
   - cd ../controller
