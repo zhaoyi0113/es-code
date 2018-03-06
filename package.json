@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:zhaoyi0113/es-code.git",
   "author": "Zhao Yi",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "elasticsearch": "^14.1.0"
+  }
 }

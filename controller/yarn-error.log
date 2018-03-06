@@ -1,0 +1,32 @@
+Arguments: 
+  /Users/joey/.nvm/versions/node/v8.9.1/bin/node /Users/joey/.nvm/versions/node/v8.9.1/bin/yarn add elasticsearch
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/anaconda/bin:/Users/joey/.nvm/versions/node/v8.9.1/bin:/Users/joey/.rvm/gems/ruby-2.4.1/bin:/Users/joey/.rvm/gems/ruby-2.4.1@global/bin:/Users/joey/.rvm/rubies/ruby-2.4.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/joey/tools/apache-maven-3.3.9/bin:/Users/joey/Library/Android/sdk/platform-tools/:/usr/local/mysql/bin:/Users/joey/.vimpkg/bin:/Users/joey/Library/Android/sdk//build-tools/24.0.2:/Users/joey/Library/Android/sdk//tools:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home//bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Users/joey/tools/apache-maven-3.3.9/bin:/Users/joey/tools/mongodb-osx-x86_64-3.4.0//bin:/Users/joey/Library/Android/sdk/platform-tools/:/usr/local/mysql/bin:/Users/joey/tools/apache-ant-1.9.7/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/joey/.rvm/bin:/usr/local/opt/hadoop/bin:/usr/local/opt/hadoop/sbin:/usr/local/opt/hbase/bin:/usr/local/opt/hive/libexec//bin:/usr/local/derby/bin:/Users/joey/dev/jump/front-end/node_modules/.bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.9.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/joey/dev/elasticsearch/es-code/controller/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /Users/joey/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/Users/joey/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /Users/joey/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
