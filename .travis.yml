@@ -6,7 +6,7 @@ language: node_js
 script:
   - uname -a
   - cd frontend
-  - yarn install --no-progress
+  - yarn install
   - cd ../controller
   - yarn install
   - cd ../electron
