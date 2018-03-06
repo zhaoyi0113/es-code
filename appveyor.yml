@@ -17,4 +17,4 @@ build_script:
   - yarn install
   - yarn dist:win
 after_build:
-  - ps: Get-ChildItem .\dist\* -Include *.exe, *.yml, *.sha1
+  - ps: Get-ChildItem .\dist\* -Include *.exe, *.yml, *.sha1 | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name -DeploymentName escodeExe }
