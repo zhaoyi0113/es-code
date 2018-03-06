@@ -18,7 +18,7 @@
     "dev:cbuild": "yarn run clean && yarn run dev:build",
 		"dev": "yarn run dev:cbuild && yarn start",
 		"dist:basic": "yarn run cbuild && build --config.extraMetadata.mode=prod -ml",
-		"dist:win": "rimraf dist/win-unpacked && rimraf dist/win-unpacked && set ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true&& yarn run cbuild && build --config.extraMetadata.mode=prod -ml --publish never --win --x64 --ia32",
+		"dist:win": "rimraf dist/win-unpacked && rimraf dist/win-unpacked && set ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true&& yarn run cbuild && build --config.extraMetadata.mode=prod -w --publish never --win --x64 --ia32",
     "dist": "CSC_IDENTITY_AUTO_DISCOVERY=false ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true yarn run dist:basic --publish never"
   },
   "dependencies": {
