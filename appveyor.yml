@@ -16,3 +16,5 @@ build_script:
   - cd ../electron
   - yarn install
   - yarn dist:win
+after_build:
+  - ps: Get-ChildItem .\electron\dist\* -Include *.exe, *.yml, *.sha1
