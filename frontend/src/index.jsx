@@ -55,7 +55,7 @@ const renderApp = () => {
     }
   }
 };
-
 store = new Store();
+renderApp();
 window.store = store;
 window.mobx = mobx;

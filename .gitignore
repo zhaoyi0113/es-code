@@ -3,3 +3,4 @@ build
 dist
 .vscode
 yarn-error.log
+lib

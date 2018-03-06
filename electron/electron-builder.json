@@ -1,0 +1,34 @@
+{
+  "appId": "com.southbanksoftware.dbkoda",
+  "compression": "normal",
+  "npmRebuild": true,
+  "files": ["assets","lib"],
+  "mac": {
+    "category": "public.app-category.productivity"
+  },
+  "dmg": {
+    "contents": [{
+        "x": 162,
+        "y": 302
+      },
+      {
+        "x": 540,
+        "y": 302,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
+  },
+  "linux": {
+    "category": "Development",
+    "target": "AppImage"
+  },
+  "win": {
+    "target": "nsis"
+  },
+  "nsis": {
+    "deleteAppDataOnUninstall": true,
+    "perMachine": true,
+    "artifactName": "${productName}-${version}.${ext}"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "env",
+    "flow"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-export-extensions",
+    "add-module-exports",
+    ["babel-plugin-root-import", [{
+      "rootPathPrefix": "~",
+      "rootPathSuffix": "src"
+    }, {
+      "rootPathPrefix": "#",
+      "rootPathSuffix": "src/tests"
+    }]]
+  ]
+}
