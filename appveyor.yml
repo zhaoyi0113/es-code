@@ -15,4 +15,4 @@ build_script:
   - yarn install
   - cd ../electron
   - yarn install
-  - yarn dist
+  - yarn dist:win
