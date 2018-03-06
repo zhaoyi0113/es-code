@@ -1,9 +1,13 @@
 image: Visual Studio 2017
 
+environment:
+  nodejs_version: "8.9.1"
 platform:
   - x64
 install:
-  - yarn install
+  - ps: Install-Product node $env:nodejs_version
+  - node -v
 
 build_script:
+  - yarn install
   - yarn dist
