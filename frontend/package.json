@@ -5,6 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack/dev.js"
+	},
+	"engines": {
+    "node": ">= 8.9.1"
   },
   "dependencies": {
     "mobx": "^3.6.1",

@@ -5,4 +5,9 @@ language: node_js
 
 script:
   - set -e
+  - cd frontend
   - yarn install --no-progress
+  - cd ../controller
+  - yarn install
+  - cd ../electron
+  - yarn install

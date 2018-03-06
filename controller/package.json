@@ -1,4 +1,7 @@
 {
+	"engines": {
+    "node": ">= 8.9.1"
+  },
   "dependencies": {
     "elasticsearch": "^14.1.0"
   }

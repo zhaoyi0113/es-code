@@ -2,7 +2,10 @@
   "name": "es-code",
   "version": "1.0.0",
   "main": "lib",
-  "license": "MIT",
+	"license": "MIT",
+	"engines": {
+    "node": ">= 8.9.1"
+  },
   "scripts": {
     "start": "electron .",
     "clean": "rimraf lib",

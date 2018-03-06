@@ -6,6 +6,9 @@
   "repository": "git@github.com:zhaoyi0113/es-code.git",
   "author": "Zhao Yi",
   "license": "MIT",
+	"engines": {
+    "node": ">= 8.9.1"
+  },
   "dependencies": {
     "elasticsearch": "^14.1.0"
   }
