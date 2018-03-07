@@ -1,12 +1,15 @@
 {
-  "appId": "com.southbanksoftware.dbkoda",
+  "appId": "io.homesoft",
   "compression": "normal",
   "npmRebuild": true,
   "files": ["assets","lib"],
   "mac": {
-    "category": "public.app-category.productivity"
+    "category": "public.app-category.productivity",
+    "icon": "icons/es-icon.png"
   },
   "dmg": {
+		"icon": "icons/es-icon.ico",
+		"iconSize": 120,
     "contents": [{
         "x": 162,
         "y": 302
@@ -20,10 +23,12 @@
     ]
   },
   "linux": {
+		"icon": "icons/es-icon.ico",
     "category": "Development",
     "target": "AppImage"
   },
   "win": {
+		"icon": "icons/es-icon.ico",
     "target": "nsis"
   },
   "nsis": {

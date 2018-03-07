@@ -10,7 +10,7 @@
 	"author": "Zhao Yi",
   "scripts": {
     "start": "electron .",
-    "clean": "rimraf lib",
+    "clean": "rimraf lib && rimraf dist",
     "cbuild": "yarn run clean && yarn run build",
 		"build": "babel --ignore tests -d lib/ src/",
 		"byo": "MODE=byo yarn run dev",
