@@ -17,7 +17,6 @@ module.exports = merge.strategy({
 	entry: {
     // activate HMR for React
     main: ['react-hot-loader/patch'],
-    performance: ['react-hot-loader/patch']
 	},
 	devtool: 'source-map',
   devServer: {

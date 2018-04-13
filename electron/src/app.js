@@ -25,7 +25,8 @@ const createWindow = (url, options) => {
 
 app.on('ready', () => {
 
-  createWindow('http://localhost:5000/ui/');
+  createWindow(`file://${__dirname}/../dist/ui/`);
+  // createWindow('http://localhost:5000/ui/');
 });
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {

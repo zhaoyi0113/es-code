@@ -11,13 +11,10 @@
   "scripts": {
     "start": "electron .",
     "clean": "rimraf lib && rimraf dist",
-    "cbuild": "yarn run clean && yarn run build",
-		"build": "babel --ignore tests -d lib/ src/",
+    "dev:link": "mkdir dist && cp -fr ../frontend/dist/ui dist/",
+		"build": "yarn run clean && babel --ignore tests -d lib/ src/",
 		"byo": "MODE=byo yarn run dev",
-		"dev:build": "yarn run build --source-maps",
-    "dev:cbuild": "yarn run clean && yarn run dev:build",
-		"dev": "yarn run dev:cbuild && yarn start",
-		"dist:basic": "yarn run cbuild && build --config.extraMetadata.mode=prod -ml",
+		"dev": "yarn run clean && yarn run build --source-maps && yarn start",
 		"dist:win": "rimraf dist/win-unpacked && rimraf dist/win-unpacked && set ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true&& yarn run cbuild && build --config.extraMetadata.mode=prod -w --publish never --win --x64 --ia32",
     "dist": "CSC_IDENTITY_AUTO_DISCOVERY=false ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true yarn run dist:basic --publish never"
   },

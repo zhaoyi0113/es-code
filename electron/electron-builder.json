@@ -5,10 +5,10 @@
   "files": ["assets","lib"],
   "mac": {
     "category": "public.app-category.productivity",
-    "icon": "icons/es-icon.png"
+    "icon": "icons/es-icon.jpg"
   },
   "dmg": {
-		"icon": "icons/es-icon.ico",
+		"icon": "icons/es-icon.jpg",
 		"iconSize": 120,
     "contents": [{
         "x": 162,
@@ -23,7 +23,7 @@
     ]
   },
   "linux": {
-		"icon": "icons/es-icon.ico",
+		"icon": "icons/png/",
     "category": "Development",
     "target": "AppImage"
   },
