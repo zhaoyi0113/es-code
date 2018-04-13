@@ -51,3 +51,13 @@ const configWinstonLog = () => {
 };
 
 configWinstonLog();
+
+const loadEnv = () => {
+  global.config = {};  
+  if(process.env.MODE === 'prod') {
+    global.config.uiUrl = `file://${__dirname}/../dist/ui/index.html`;
+  } else {
+    global.config.uiUrl = 'http://localhost:5500/ui/';
+  }
+};
+loadEnv();

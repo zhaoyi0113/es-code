@@ -25,7 +25,7 @@ const createWindow = (url, options) => {
 
 app.on('ready', () => {
 
-  createWindow(`file://${__dirname}/../dist/ui/index.html`);
+  createWindow(global.config.uiUrl);
   // createWindow('http://localhost:5000/ui/');
 });
 // Quit when all windows are closed.

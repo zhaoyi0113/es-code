@@ -17,6 +17,8 @@
     "mobx-react-devtools": "^5.0.1",
     "react": "^16.2.0",
     "react-dom": "~16.1.1",
+    "react-icons-kit": "^1.0.7",
+    "react-router": "^4.2.0",
     "react-sidenav": "^2.1.2"
   },
   "devDependencies": {

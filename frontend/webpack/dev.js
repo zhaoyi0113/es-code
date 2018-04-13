@@ -24,11 +24,11 @@ module.exports = merge.strategy({
     hot: true,
 
     // match the output path
-    contentBase: path.resolve(__dirname, '../dist'),
+    contentBase: path.resolve(__dirname, '../dist/ui'),
 
     // match the output `publicPath`
     publicPath: '/ui/',
-    port: 5000,
+    port: 5500,
     host: '0.0.0.0'
 	},
 	module: {

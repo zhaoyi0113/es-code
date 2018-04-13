@@ -7,14 +7,14 @@ import { AppContainer } from 'react-hot-loader';
 import App from './components/app';
 import Store from './stores';
 
-useStrict(true);
-
 const rootEl = document.getElementById('root');
 
 let store;
-
+const IS_ELECTRON = window.require !== undefined;
 const electron = window.require('electron');
 const { ipcRenderer } = electron;
+
+const EventType = {APP_READY: 'APP_READY'};
 
 const renderApp = () => {
   if (store) {
@@ -57,5 +57,5 @@ const renderApp = () => {
 };
 store = new Store();
 renderApp();
-window.store = store;
-window.mobx = mobx;
+// window.store = store;
+// window.mobx = mobx;
